@@ -1,7 +1,7 @@
 #wrap {
     width: 100%;
     height: 10000px;
-    background-color: gray;
+    /* background-color: gray; */
     padding-top: 50px;
 }
 
@@ -15,13 +15,16 @@ header {
 
 #banner {
     width: 100%;
-    height: 120px;
-    background-color: black;
+    height: 3020px;
+    background-color: gray;
 }
 
 .banner-inner {
     width: 1500px;
-    height: 100px;
+    height: 1100px;
     margin: 0 auto;
     background-color: blue;
+}
+
+.banner-inner img {
 }
