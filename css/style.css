@@ -193,6 +193,28 @@ header {
     line-height: 1.3em;
 }
 
+/* history */
+
+#history {
+    width: 100%;
+    padding: 150px 50px;
+    box-sizing: border-box;
+    background: linear-gradient(-46deg, #3600dc, #8e00f8 95%);
+}
+
+.history-inner {
+    width: 100%;
+}
+
+.history-inner > .sub-hd {
+    color: white;
+}
+
+.history-img {
+    width: 100%;
+    margin-top: 100px;
+}
+
 /* tech */
 
 #tech {
@@ -338,3 +360,10 @@ header {
     margin-right: 35px;
 } 
 
+
+@media screen and (max-width:1500px) {
+    .inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
