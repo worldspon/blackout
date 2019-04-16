@@ -12,6 +12,14 @@
         padding: 100px 30px;
     }
 
+    .header-inner {
+        padding: 0 30px;
+    }
+
+    .banner-inner {
+        padding: 0 30px;
+    }
+
     #about {
         height:auto;
         background-size: cover;
@@ -24,6 +32,10 @@
 
     #history {
         padding: 120px 30px 80px;
+    }
+
+    .ft-inner {
+        padding: 50px 30px;
     }
 }
 
@@ -225,7 +237,7 @@
     }
 
     .tech-icon img {
-        width: 80px; 
+        width: 80px;
     }
 
 }
@@ -272,6 +284,10 @@
 
     .mobile-menu {
         width: 30px;
+    }
+
+    .slogan-box {
+        padding-top: 20px;
     }
 
 }
