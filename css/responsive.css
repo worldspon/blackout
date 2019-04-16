@@ -244,6 +244,20 @@
 
 @media screen and (max-width: 700px) {
 
+    .header-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .banner-inner {
+        padding: 0;
+    }
+
+    .slogan-box {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .talent-box-wrap {
         flex-flow: column;
     }
