@@ -1,0 +1,282 @@
+
+@media screen and (max-width:1560px) {
+
+    html, body {
+        overflow-x: hidden;
+        font-size: 11px;
+    }
+    
+    .inner {
+        width: 100%;
+        margin: 0 auto;
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+    #about {
+        height:auto;
+        background-size: cover;
+    }
+
+    .about-inner {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #history {
+        padding: 120px 30px 80px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    
+    html, body {
+        font-size: 10px;
+    }
+
+    .slogan-img {
+        width: 50%;
+    }
+
+    .about-img {
+        margin-top: -8%;
+    }
+
+    .about-story {
+        margin-left: 100px;
+    }
+
+    .talent-box {
+        padding: 60px 50px 30px;
+
+    }
+
+    .talent-inner {
+        padding:100px 30px 30px;
+    }
+
+    .talent-box {
+        width: 20.5%;
+    }
+
+    .tech-list-box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .bus-icon {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .money-icon {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .game-icon {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    
+    .lottery-icon {
+        grid-column: 4;
+        grid-row: 1;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    html, body {
+        font-size: 10px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .slogan-box {
+        padding-top: 70px;
+    }
+
+    .slogan-img {
+        margin-top: 70px;
+    }
+
+    .ws-info {
+        width: 30%;
+    }
+
+    .ws-info-icon {
+        height: 80px;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-box {
+        padding-left: 0;
+        margin-top: 80px;
+    }
+
+    .about-story {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    #history {
+        padding: 100px 30px 80px;
+    }
+
+    .history-chart-box {
+        margin-top: 50px;
+    }
+
+    .history-nav-box {
+        text-align: center;
+        margin-top: 50px;
+        /* display: flex; */
+    }
+
+    .tech-list-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 230px);
+        row-gap: 35px;
+    }
+
+    .bus-icon {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .money-icon {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .game-icon {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .lottery-icon {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .talent-box {
+        width: 15%;
+        height: 250px;
+        padding: 30px 50px;
+        border : 1px solid #eee;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 3px 3px 1px 1px #eee;
+    }
+
+    .talent-box > img {
+        width: 80px;
+    }
+
+    .talent-text {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .slogan-img {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:740px) {
+
+    html, body {
+        font-size: 9px;
+    }
+
+    .slogan-box {
+        justify-content: center;
+    }
+
+    .slogan-img {
+        display: none;
+    }
+
+    .ws-info-box {
+        padding-top: 100px;
+    }
+
+    .ws-info-icon {
+        height: 60px;
+    }
+
+    .tech-list-box {
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .tech-icon {
+        padding: 0px 0 40px;
+    }
+
+    .tech-icon img {
+        width: 80px; 
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .talent-box-wrap {
+        flex-flow: column;
+    }
+    .talent-box {
+        width: 70%;
+        height: 180px;
+    }
+    .talent-box:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    .news-inner {
+        padding: 100px 30px;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .news-list span {
+        background: none;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+}
+
+@media screen and (max-width:490px) {
+
+    html, body {
+        font-size: 8px;
+    }
+
+        
+    .header-logo img {
+        width: 200px;
+    }
+
+    .mobile-menu {
+        width: 30px;
+    }
+
+}

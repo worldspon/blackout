@@ -47,6 +47,7 @@ header {
 .nav-list {
     display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
 .nav-list li:not(:last-child) {
@@ -56,6 +57,12 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
+}
+
+.mobile-menu {
+    display: none;
+    width: 50px;
+    margin-top: 5px;
 }
 
 #banner {
@@ -241,11 +248,11 @@ header {
 
 .history-inner {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .history-chart-box {
-    width: 4000px;
+    width: 3300px;
     position: relative;
     display: flex;
     margin-top: 130px;
@@ -260,7 +267,7 @@ header {
 }
 
 .history-content {
-    width: 10.7%;
+    width: 10%;
     position: relative;
     box-sizing: border-box;
     height: auto;
@@ -287,12 +294,11 @@ header {
 }
 
 .history-sub-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
 .history-text {
-    width: 65%;
     font-size: 1.2rem;
     margin-top: 10px;
     margin-left: auto;
@@ -327,7 +333,6 @@ header {
 }
 
 .tech-list-box {
-    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr repeat(4, 240px) 1fr;
     grid-column-gap: 35px;
@@ -345,6 +350,11 @@ header {
     padding: 40px 0 80px;
     box-shadow: 0px 4px 6px 4px rgba(0,0,0,0.09);
 }
+
+.tech-icon img {
+    width: 120px; 
+}
+
 .tech-icon span {
     position: absolute;
     bottom: 35px;
@@ -454,121 +464,4 @@ header {
 .ft-cp {
     font-size:1.2rem;
     color: #777;
-}
-
-@media screen and (max-width:1560px) {
-
-    html, body {
-        font-size: 11px;
-    }
-    
-    .inner {
-        width: 100%;
-        margin: 0 auto;
-        padding-left:30px;
-        padding-right:30px;
-    }
-
-    #about {
-        height:auto;
-        background-size: cover;
-    }
-
-    .about-inner {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-}
-
-@media screen and (max-width:1200px) {
-
-    
-    html, body {
-        font-size: 10px;
-    }
-
-    .slogan-img {
-        width: 50%;
-    }
-
-    .about-img {
-        margin-top: -8%;
-    }
-
-    .about-story {
-        margin-left: 100px;
-    }
-}
-
-@media screen and (max-width:1000px) {
-
-    html, body {
-        font-size: 10px;
-    }
-
-    .nav-list {
-        display: none;
-    }
-
-    .slogan-box {
-        padding-top: 70px;
-    }
-
-    .slogan-img {
-        margin-top: 70px;
-    }
-
-    .ws-info {
-        width: 30%;
-    }
-
-    .ws-info-icon {
-        height: 80px;
-    }
-
-    .about-img {
-        display: none;
-    }
-
-    .about-box {
-        padding-left: 0;
-        margin-top: 80px;
-    }
-
-    .about-story {
-        margin-left: 0;
-        padding: 0 100px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .slogan-img {
-        width: 60%;
-    }
-
-}
-
-@media screen and (max-width:740px) {
-
-    html, body {
-        font-size: 9px;
-    }
-
-    .slogan-box {
-        justify-content: center;
-    }
-
-    .slogan-img {
-        display: none;
-    }
-
-    .ws-info-box {
-        padding-top: 100px;
-    }
-
-    .ws-info-icon {
-        height: 60px;
-    }
-
-    
 }
