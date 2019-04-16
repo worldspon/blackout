@@ -9,8 +9,7 @@
     .inner {
         width: 100%;
         margin: 0 auto;
-        padding-left:30px;
-        padding-right:30px;
+        padding: 100px 30px;
     }
 
     #about {
@@ -50,10 +49,6 @@
     .talent-box {
         padding: 60px 50px 30px;
 
-    }
-
-    .talent-inner {
-        padding:100px 30px 30px;
     }
 
     .talent-box {
@@ -248,8 +243,8 @@
         margin-top: 30px;
     }
 
-    .news-inner {
-        padding: 100px 30px;
+    .history-content {
+        width: 5%;
     }
 }
 
