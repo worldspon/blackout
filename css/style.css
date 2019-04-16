@@ -92,6 +92,7 @@ header {
     border:none;
     border-radius: 3px;
     background: #00bff3;
+    box-shadow: 3px 3px 2px 2px rgba(0,0,0,0.3);
     cursor: pointer;
 }
 
@@ -111,13 +112,16 @@ header {
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    width:350px;
-    height:300px;
+    width:26.66%;
     box-sizing: border-box;
-    padding-top: 20px;
+    padding: 4% 0;
     background: #fff;
     border-radius: 15px;
     box-shadow: 5px 8px 1px 1px rgba(0,0,0,0.3);
+}
+
+.ws-info-icon {
+    height: 100px;
 }
 
 .info-hl {
@@ -137,7 +141,7 @@ header {
 #about {
     box-sizing: border-box;
     width: 100%;
-    height:868px;
+    height:auto;
     background-image:url(../images/bg_aboutus.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,6 +149,7 @@ header {
 
 .about-inner {
     padding-top: 140px;
+    padding-bottom: 140px;
 }
 
 .about-box {
@@ -157,19 +162,21 @@ header {
 
 .about-img {
     width: 30%;
+    margin-top: -50px;
 }
 
 .about-story {
-    font-size: 1.5rem;
-    line-height: 1.3em;
-    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2em;
+    font-weight: 400;
     margin-left: 150px;
-    color: #333;
+    color: #000;
 }
 
 .about-story span {
     display: block;
     text-align: right;
+    font-weight: 600;
     margin-top: 50px;
 }
 
@@ -327,6 +334,24 @@ header {
     grid-template-rows: auto;
 }
 
+
+.tech-icon {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6300ea;
+    border-radius: 15px;
+    padding: 40px 0 80px;
+    box-shadow: 0px 4px 6px 4px rgba(0,0,0,0.09);
+}
+.tech-icon span {
+    position: absolute;
+    bottom: 35px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 .bus-icon {
     grid-column: 2;
     grid-row: 1;
@@ -348,17 +373,7 @@ header {
 }
 
 .tech-list-box {
-    margin:100px 0;
-}
-
-.tech-list-box>div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #6300ea;
-    border-radius: 15px;
-    padding: 50px 0;
-    box-shadow: 0px 4px 6px 4px rgba(0,0,0,0.09);
+    margin:80px 0;
 }
 
 .tech-value {
@@ -441,21 +456,6 @@ header {
     color: #777;
 }
 
-.friendly-partnership {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.friendly-partnership img {
-    width: 110px;
-}
-
-.friendly-partnership a:not(:last-child) {
-    margin-right: 35px;
-} 
-
-
 @media screen and (max-width:1560px) {
 
     html, body {
@@ -467,6 +467,36 @@ header {
         margin: 0 auto;
         padding-left:30px;
         padding-right:30px;
+    }
+
+    #about {
+        height:auto;
+        background-size: cover;
+    }
+
+    .about-inner {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    
+    html, body {
+        font-size: 10px;
+    }
+
+    .slogan-img {
+        width: 50%;
+    }
+
+    .about-img {
+        margin-top: -8%;
+    }
+
+    .about-story {
+        margin-left: 100px;
     }
 }
 
@@ -481,15 +511,48 @@ header {
     }
 
     .slogan-box {
-        padding-top: 0px;
+        padding-top: 70px;
     }
 
     .slogan-img {
-        margin-top: 0px;
+        margin-top: 70px;
+    }
+
+    .ws-info {
+        width: 30%;
+    }
+
+    .ws-info-icon {
+        height: 80px;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-box {
+        padding-left: 0;
+        margin-top: 80px;
+    }
+
+    .about-story {
+        margin-left: 0;
+        padding: 0 100px;
     }
 }
 
+@media screen and (max-width: 900px) {
+    .slogan-img {
+        width: 60%;
+    }
+
+}
+
 @media screen and (max-width:740px) {
+
+    html, body {
+        font-size: 9px;
+    }
 
     .slogan-box {
         justify-content: center;
@@ -498,4 +561,14 @@ header {
     .slogan-img {
         display: none;
     }
+
+    .ws-info-box {
+        padding-top: 100px;
+    }
+
+    .ws-info-icon {
+        height: 60px;
+    }
+
+    
 }
