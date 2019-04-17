@@ -16,23 +16,29 @@ const historyRight = document.querySelector('.history-right-btn');
 const techIcon = document.querySelectorAll('.tech-icon');
 const techVal = document.querySelectorAll('.tech-value');
 
+// 첫 로드시 history margin 0 초기화
 historyChartBox.style.marginLeft = '0px';
 
+// history inner box, history content width 
 let historyInnerWidth = historyInner.offsetWidth;
 let historyContentWidth = historyContent.offsetWidth;
 
+// mobile menu 활성화 event
 mobileMenuBtn.addEventListener('click', function(){
     mobileMenu.style.marginRight = '0px';
 });
 
+// mobile menu 비활성화 event
 mobileMenuBtnAfter.addEventListener('click', function(){
     mobileMenu.style.marginRight = `-${mobileMenu.offsetWidth}px`;
 })
 
+// history nav event
 historyLeft.addEventListener('click', function(){
 
     let nowMargin = parseInt(historyChartBox.style.marginLeft);
 
+    // 이동한 값 + 이동할 값이 전체 크기보다 크면 남은 크기만큼만 이동시킨다.
     if(nowMargin+historyContentWidth>=0) {
         historyChartBox.style.marginLeft = '0px';
     } else {
@@ -42,14 +48,13 @@ historyLeft.addEventListener('click', function(){
     
 });
 
-window.addEventListener('change', function(){
-    console.log('a');
-})
 
+// history nav event
 historyRight.addEventListener('click', function(){
 
     let nowMargin = parseInt(historyChartBox.style.marginLeft);
 
+    // 이동한 값 + 이동할 값이 전체 크기보다 크면 남은 크기만큼만 이동시킨다.
     if(-(nowMargin-historyContentWidth)+historyInnerWidth >= historyLine.offsetWidth) {
         let val = -nowMargin+historyInnerWidth - historyLine.offsetWidth;
         nowMargin += val;
@@ -61,6 +66,7 @@ historyRight.addEventListener('click', function(){
 });
 
 
+// scroll시 header background 활성화 및 mobile menu 비활성화
 window.addEventListener('scroll', function(){
     if(window.scrollY >= 10) {
         header.style.backgroundColor = '#8e00f8';
@@ -71,12 +77,15 @@ window.addEventListener('scroll', function(){
 });
 
 
+// resize시 history 사이즈 재설정
 window.addEventListener('resize', function(){
     historyInnerWidth = historyInner.offsetWidth;
     historyContentWidth = historyContent.offsetWidth;
 });
 
 
+
+// techicon grayscale 적용 및 click 이벤트 등록
 Array.from(techIcon).forEach(function(el, i){
 
     if(i==0) {

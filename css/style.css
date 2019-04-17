@@ -1,5 +1,6 @@
 html, body {
     font-size: 12px;
+    -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     font-family: 'Gothic A1', sans-serif;
 }
@@ -25,6 +26,7 @@ html, body {
     text-align: center;
 }
 
+/* header start */
 header {
     position: fixed;
     top:0;
@@ -102,7 +104,10 @@ header {
 .mobile-list li:not(:last-child) {
     margin-bottom: 10px;
 }
+/* header end */
 
+
+/* banner start */
 #banner {
     width: 100%;
     background-image: url(../images/bg_banner.png);
@@ -181,6 +186,7 @@ header {
     font-weight: 600;
     margin-top: 20px;
 }
+/* banner end */
 
 /* about us */
 #about {
@@ -224,9 +230,10 @@ header {
     font-weight: 600;
     margin-top: 50px;
 }
+/* about us */
+
 
 /* talent */
-
 #talent {
     width: 100%;
     background: #fff;
@@ -273,9 +280,10 @@ header {
     font-weight: 600;
     margin-top: 50px;
 }
+/* talent */
+
 
 /* history */
-
 #history {
     width: 100%;
     padding: 120px 200px 80px;
@@ -357,10 +365,11 @@ header {
 .history-nav-box img:last-child {
     margin-left: 20px;
 }
+/* history */
+
 
 
 /* tech */
-
 #tech {
     width: 100%;
     border-bottom: 1px solid #ccc;
@@ -380,7 +389,6 @@ header {
     grid-template-rows: auto;
 }
 
-
 .tech-icon {
     display: flex;
     position: relative;
@@ -395,7 +403,6 @@ header {
 
 .tech-icon img {
     width: 120px;
-    
 }
 
 .tech-icon span {
@@ -453,9 +460,10 @@ header {
 .tech-value:first-of-type {
     display: block;
 }
+/* tech */
+
 
 /* news */
-
 #news {
     width: 100%;
 }
@@ -491,7 +499,7 @@ header {
     background-repeat: no-repeat;
     background-position: right center;
 }
-
+/* news */
 
 
 
