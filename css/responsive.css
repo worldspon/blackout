@@ -240,6 +240,10 @@
         width: 80px;
     }
 
+    .btn-google {
+        margin-top: 30px;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -270,7 +274,7 @@
     }
 
     .history-chart-box {
-        width: 3200px;
+        width: 2400px;
     }
 }
 
@@ -281,6 +285,10 @@
         overflow:hidden;
         text-overflow:ellipsis;
         white-space:nowrap;
+    }
+
+    .history-chart-box {
+        width: 2000px;
     }
 
 }
