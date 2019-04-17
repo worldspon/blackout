@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WorldSpon</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+
+    <script>
+        'use strict;'
+        const agent = navigator.userAgent.toLowerCase();
+        if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+            alert("이 페이지는 Chrome에 최적화되어 있습니다.\nIE로 접속 시 주요 기능이 동작하지 않을 수 있습니다.");
+        }
+    </script>
+
 </head>
 <body>
     <div id="wrap">
@@ -25,7 +35,18 @@
                     <li><a href="#tech">TECH</a></li>
                     <li><a href="#news">NEWS</a></li>
                 </ul>
-                <img class="mobile-menu" src="./images/mobile_menu.png" alt="">
+                <img class="mobile-menu-btn" src="./images/mobile_menu.png" alt="">
+                <div class="mobile-menu">
+                    <img class="mobile-menu-btn-after" src="./images/mobile_menu.png" alt="">
+                    <ul class="mobile-list">
+                        <li><a href="#banner">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#talent">TALENT</a></li>
+                        <li><a href="#history">HISTORY</a></li>
+                        <li><a href="#tech">TECH</a></li>
+                        <li><a href="#news">NEWS</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <section id="banner">
@@ -47,12 +68,12 @@
                     <div class="ws-info">
                         <img class="ws-info-icon" src="./images/info_icon2.png" alt="icon">
                         <p class="info-hl">공급된 스폰의 가치</p>
-                        <p class="info-value">$28,641,546,17</p>
+                        <p class="info-value">$10,687.39</p>
                     </div>
                     <div class="ws-info">
                         <img class="ws-info-icon" src="./images/info_icon3.png" alt="icon">
                         <p class="info-hl">올해 누적 광고수익</p>
-                        <p class="info-value">$462,135,896</p>
+                        <p class="info-value">$44,029.59</p>
                     </div>
                 </div>
             </div>
@@ -182,8 +203,8 @@
                     </div>
                 </div>
                 <div class="history-nav-box">
-                    <img src="./images/arrow_l.png" alt="">
-                    <img src="./images/arrow_r.png" alt="">
+                    <img class="history-left-btn" src="./images/arrow_l.png" alt="">
+                    <img class="history-right-btn" src="./images/arrow_r.png" alt="">
                 </div>
             </div>
         </section>
@@ -209,13 +230,16 @@
                         <span>Lottery</span>
                     </div>
                 </div>
-                <p class="tech-value">앱을 통해 얻은 포인트를 이용해 교통카드를 충전 할 수 있습니다.</p>
+                <p class="tech-value">앱을 통해 얻은 포인트를 이용해 교통카드를 충전할 수 있습니다.</p>
+                <p class="tech-value">포인트는 현금으로 환전할 수 있고 100여 개의 제휴점에서 사용할 수 있습니다.</p>
+                <p class="tech-value">앱 내의 재화를 게임에서 사용하고 다양한 가상화폐를 채굴할 수 있습니다.</p>
+                <p class="tech-value">자사의 가상화폐인 스폰을 이용하여 전 세계 어디서나 복권을 구매할 수 있습니다.</p>
             </div>
         </section>
         
         <section id="news">
             <div class="news-inner inner">
-                <h2 class="sub-hd">News</h2>
+                <h2 class="sub-hd">Press</h2>
                 <div class="news-box">
                     <div class="news-list">
                         <a href="https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=031&aid=0000480823" target="_blank">
@@ -241,7 +265,6 @@
                 </div>
             </div>
         </footer>
-
     </div>
 
 

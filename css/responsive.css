@@ -102,7 +102,7 @@
         display: none;
     }
 
-    .mobile-menu {
+    .mobile-menu-btn {
         display: block;
     }
 
@@ -269,8 +269,8 @@
         margin-top: 30px;
     }
 
-    .history-content {
-        width: 5%;
+    .history-chart-box {
+        width: 3200px;
     }
 }
 
@@ -296,9 +296,14 @@
         width: 200px;
     }
 
-    .mobile-menu {
+    .mobile-menu-btn {
         width: 30px;
     }
+
+    .mobile-menu-btn-after {
+        width: 30px;
+    }
+    
 
     .slogan-box {
         padding-top: 20px;
