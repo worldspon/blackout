@@ -2,7 +2,7 @@ html, body {
     font-size: 12px;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 #wrap {
@@ -142,7 +142,7 @@ header {
     border:none;
     border-radius: 3px;
     background: #00bff3;
-    box-shadow: 3px 3px 2px 2px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px #532480);
     cursor: pointer;
 }
 
@@ -167,7 +167,7 @@ header {
     padding: 4% 0;
     background: #fff;
     border-radius: 15px;
-    box-shadow: 5px 8px 1px 1px rgba(0,0,0,0.3);
+    filter: drop-shadow(8px 8px 5px rgba(0,0,0,0.3));
 }
 
 .ws-info-icon {
@@ -217,7 +217,7 @@ header {
 }
 
 .about-story {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 2em;
     font-weight: 400;
     margin-left: 150px;
@@ -277,7 +277,7 @@ header {
     color: #555;
     font-size: 1.3rem;
     line-height: 1.3em;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 50px;
 }
 /* talent */
@@ -487,7 +487,8 @@ header {
     padding: 20px 55px;
     font-size: 1.5rem;
     color: #666;
-    font-weight: 600;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 .news-list span {
@@ -532,5 +533,6 @@ header {
 
 .ft-cp {
     font-size:1.2rem;
+    font-weight: 700;
     color: #777;
 }
