@@ -3,6 +3,7 @@ html, body {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     font-family: 'Nanum Gothic', sans-serif;
+    overflow-x: hidden;
 }
 
 #wrap {
@@ -76,12 +77,10 @@ header {
 }
 
 .mobile-menu {
-    display: flex;
+    display: none;
     flex-flow: column;
     align-items: center;
     text-align: end;
-    margin-right: -130px;
-    transition: margin-right 0.5s;
     text-align: center;
     padding-top: 10px;
     position: absolute;

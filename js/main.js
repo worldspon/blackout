@@ -25,12 +25,13 @@ let historyContentWidth = historyContent.offsetWidth;
 
 // mobile menu 활성화 event
 mobileMenuBtn.addEventListener('click', function(){
-    mobileMenu.style.marginRight = '0px';
+    mobileMenu.style.display = 'flex';
 });
 
 // mobile menu 비활성화 event
 mobileMenuBtnAfter.addEventListener('click', function(){
-    mobileMenu.style.marginRight = `-${mobileMenu.offsetWidth}px`;
+
+    mobileMenu.style.display = 'none';
 })
 
 // history nav event
@@ -73,7 +74,7 @@ window.addEventListener('scroll', function(){
     } else {
         header.style.backgroundColor = 'transparent';
     }
-    mobileMenu.style.marginRight = `-${mobileMenu.offsetWidth}px`;
+    mobileMenu.style.display = 'none';
 });
 
 
